@@ -1,0 +1,138 @@
+html{
+	background-color: #C8C8C8;
+}
+
+body{
+	font-family: "Open Sans", Helvetica, arial;
+	max-width:1200px;
+	width:90%;
+	padding: 2%;
+	margin:0 auto;
+	font-size:95%;
+}
+
+/* header styles*/
+#header{
+	padding:2% 2% 1%;	
+}
+
+#header img{
+	width:10%;
+	float: right;
+	padding:5% 5% 0;
+}
+
+#header ul li a{
+	text-decoration: none;
+	color:#000000;
+}
+
+
+/* navigation menu styles*/
+#nav_menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li{
+	float:left;
+	width:16.6667%;
+	background-color:#404040;
+}
+
+#nav_menu ul li a{
+	display: block;
+	padding:0 .8em;
+	margin:.8em 0;
+	text-align:center;
+	color:#FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav_menu ul li:hover{
+	background-color:#C8C8C8;
+}
+
+/* main section styles*/
+#section{
+	width: 96%;
+	padding:2%;
+	background-color:#ffffff;
+	float: left; 
+}
+#section img{
+	max-width: 300px;
+	width:80%;
+}
+figure{
+	float:right;
+	margin:0 1% 3%;
+}
+figcaption{
+	font-weight:bold;
+}
+
+#p2{
+	clear:both;
+}
+#p3{
+	clear:both;
+}
+
+/* footer styles*/
+#footer{
+	float:left;
+	padding:5% 1%;
+	font-size: 85%;
+	font-style: italic;
+}
+
+/* Responsive design*/
+#mobile_menu{
+	display:none;
+}
+
+/*960px or less*/
+@media only screen and (max-width:960px){
+	#nav_menu{
+		display:none;
+	}
+	#mobile_menu{
+		display:block;
+	}
+	#header img{
+		display:none;
+	}
+	body{
+		font-size:90%;
+	}
+	#header img{
+		max-width:30%;
+	}
+}
+
+@media only screen and (max-width:800px){
+	body{
+		font-size:85%;
+	}
+}
+@media only screen and (max-width:479px){
+	#header img{
+		display:none;
+	}
+	body{
+		font-size:80%;
+	}
+	#section{
+		width:96%;
+	}
+}
+
+/*printing styles*/
+@media print{
+	#nav_menu{
+		display:none;
+	}
+}
